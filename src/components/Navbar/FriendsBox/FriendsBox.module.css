@@ -1,0 +1,43 @@
+.friendsBoxContainer {
+    position: sticky;
+    top: 0;
+    background-color: darkgray;
+    margin-top: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.friendsBoxContainer > h3 {
+    margin: 0 15px;
+}
+
+.friendsBoxItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+}
+
+.friendItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friendImgWrapper {
+    background-color: greenyellow;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friendImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}

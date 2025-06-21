@@ -1,0 +1,27 @@
+.navDiv {
+    grid-area: n;
+    background-color: orange;
+}
+
+.stickyWrapper {
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    background-color: skyblue;
+    padding: 20px;
+}
+
+.navbarElements {
+}
+
+.navbarItem {
+    color: white;
+    text-decoration: none;
+}
+
+.navbarItemActive {
+    color: orangered;
+    text-decoration: none;
+}

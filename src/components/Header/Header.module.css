@@ -1,0 +1,12 @@
+.header {
+    grid-area: h;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+}
+.header > img {
+    width: 50px;
+    margin-left: 10px;
+    pointer-events: none;
+    user-select: none;
+}

@@ -1,0 +1,186 @@
+.messages {
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+}
+
+.chatsItems {
+    background-color: ghostwhite;
+    box-sizing: border-box;
+    border-right: lightgray 1px solid;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: lightgray transparent;
+}
+
+.chatWrapper {
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+    grid-template-areas:
+            "i l"
+            "i m";
+    gap: 5px;
+}
+
+.chatImgWrapper {
+    background-color: greenyellow;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: i;
+}
+
+.chatImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatLink {
+    color: dimgray;
+    text-decoration: none;
+    grid-area: l;
+}
+
+.chatLink:hover {
+    text-shadow: 1px 1px 1px orangered;
+}
+
+.chatLink.active {
+    color: orangered;
+    .chatWrapper:has(&.chatLink) {
+        background-color: darksalmon;
+    }
+}
+
+.chatLink.active:hover {
+    text-shadow: none;
+}
+
+.chatMsgPreview {
+    grid-area: m;
+    color: darkgray;
+    overflow: hidden;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+
+
+.chatMessages {
+}
+
+.message {
+
+}
+
+.messagesContainer {
+    background-color: lemonchiffon;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 80vh;
+    color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: lightgray transparent;
+    scrollbar-width: thin;
+}
+
+.messagesScrollWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.myMessageBubble {
+    background-color: lightcoral;
+    padding: 10px 20px;
+    width: 45%;
+    border-radius: 20px;
+    align-self: flex-end;
+    position: relative;
+    margin-right: 10px;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: lightcoral;
+        border-bottom-left-radius: 20px;
+        width: 20px;
+        height: 20px;
+        bottom: 0;
+        left: 97%;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: lemonchiffon;
+        border-bottom-left-radius: 20px;
+        width: 20px;
+        height: 30px;
+        bottom: -5px;
+        left: 100%;
+    }
+}
+
+.otherMessageBubble {
+    background-color: darkgray;
+    padding: 10px 20px;
+    width: 45%;
+    border-radius: 20px;
+    align-self: flex-start;
+    position: relative;
+    margin-left: 10px;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: darkgray;
+        border-bottom-right-radius: 20px;
+        width: 20px;
+        height: 20px;
+        bottom: 0;
+        right: 97%;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: lemonchiffon;
+        border-bottom-right-radius: 20px;
+        width: 20px;
+        height: 30px;
+        bottom: -5px;
+        right: 100%;
+    }
+}
+
+.messageBubbleContent {
+
+}
+
+.messageBubbleText {
+
+}

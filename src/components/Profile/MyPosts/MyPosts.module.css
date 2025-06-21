@@ -1,0 +1,14 @@
+.postsBlock {
+    padding: 10px;
+}
+
+.postInput > textarea {
+    resize: none;
+    width: 850px;
+    min-height: 36px;
+    field-sizing: content;
+}
+
+.postItems {
+    margin-top: 10px;
+}

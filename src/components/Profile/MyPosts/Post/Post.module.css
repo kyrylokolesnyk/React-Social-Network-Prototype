@@ -1,0 +1,9 @@
+.postItem {
+
+}
+
+.postItem img {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
